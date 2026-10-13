@@ -1,0 +1,432 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>教你炒股票54：一个具体走势的分析 | 股市操练笔记</title><meta name="author" content="操练笔记"><meta name="copyright" content="操练笔记"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#e3f2fd"><meta name="description" content="以航天机电一段1分钟走势为例，完整示范中枢划分、结合律分解与三类买卖点判定。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="教你炒股票54：一个具体走势的分析">
+<meta property="og:url" content="https://blog.zhangzhh.xyz/2026/10/12/chan-ch54/index.html">
+<meta property="og:site_name" content="股市操练笔记">
+<meta property="og:description" content="以航天机电一段1分钟走势为例，完整示范中枢划分、结合律分解与三类买卖点判定。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://blog.zhangzhh.xyz/img/butterfly-icon.png">
+<meta property="article:published_time" content="2026-10-11T23:06:00.000Z">
+<meta property="article:modified_time" content="2026-10-12T11:42:03.116Z">
+<meta property="article:author" content="操练笔记">
+<meta property="article:tag" content="中枢理论">
+<meta property="article:tag" content="原文版">
+<meta property="article:tag" content="缠中说禅">
+<meta property="article:tag" content="缠论">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blog.zhangzhh.xyz/img/butterfly-icon.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "教你炒股票54：一个具体走势的分析",
+  "url": "https://blog.zhangzhh.xyz/2026/10/12/chan-ch54/",
+  "image": "https://blog.zhangzhh.xyz/img/butterfly-icon.png",
+  "datePublished": "2026-10-11T23:06:00.000Z",
+  "dateModified": "2026-10-12T11:42:03.116Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "操练笔记",
+      "url": "https://blog.zhangzhh.xyz"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://blog.zhangzhh.xyz/2026/10/12/chan-ch54/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="manifest" href="/manifest.json"/><link rel="apple-touch-icon" sizes="180x180" href="/img/pwa-180.png"/><link rel="icon" type="image/png" sizes="32x32" href="/img/pwa-192.png"/><link rel="icon" type="image/png" sizes="16x16" href="/img/pwa-180.png"/><link rel="stylesheet" href="/css/index.css?v=5.7.1.260810"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        try {
+          const data = { value }
+
+          if (ttl != null) {
+            data.expiry = Date.now() + ttl * 86400000
+          }
+
+          localStorage.setItem(key, JSON.stringify(data))
+        } catch (e) {
+          console.error(e)
+        }
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return
+
+        try {
+          const data = JSON.parse(itemStr)
+
+          if (data.expiry && Date.now() > data.expiry) {
+            localStorage.removeItem(key)
+            return
+          }
+
+          return data.value
+        } catch {
+          localStorage.removeItem(key)
+        }
+      }
+    }
+
+    const scriptCache = new Map()
+    const cssCache = new Map()
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => {
+        if (scriptCache.has(url)) {
+          return scriptCache.get(url)
+        }
+
+        const promise = new Promise((resolve, reject) => {
+          const script = document.createElement('script')
+
+          script.src = url
+          script.async = true
+
+          for (const key in attr) {
+            script.setAttribute(key, attr[key])
+          }
+
+          script.onload = resolve
+          script.onerror = reject
+
+          document.head.appendChild(script)
+        })
+
+        scriptCache.set(url, promise)
+
+        return promise
+      },
+      getCSS: (url, id) => {
+        if (cssCache.has(url)) {
+          return cssCache.get(url)
+        }
+
+        const promise = new Promise((resolve, reject) => {
+          const link = document.createElement('link')
+
+          link.rel = 'stylesheet'
+          link.href = url
+
+          if (id) {
+            link.id = id
+          }
+
+          link.onload = resolve
+          link.onerror = reject
+
+          document.head.appendChild(link)
+        })
+
+        cssCache.set(url, promise)
+
+        return promise
+      },
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const metaThemeColor = document.querySelector('meta[name="theme-color"]')
+      const activateDarkMode = () => {
+        document.documentElement.dataset.theme = 'dark'
+        if (metaThemeColor !== null) {
+          metaThemeColor.setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.dataset.theme = 'light'
+        if (metaThemeColor !== null) {
+          metaThemeColor.setAttribute('content', '#e3f2fd')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '教你炒股票54：一个具体走势的分析',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'post'
+}</script><link rel="stylesheet" href="/css/custom.css?v=20261012"><meta name="generator" content="Hexo 8.1.2"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      if ($loadingBox.classList.contains('loaded')) return
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+
+  if (document.readyState === 'complete') {
+    preloader.endLoading()
+  } else {
+    window.addEventListener('load', preloader.endLoading)
+    document.addEventListener('DOMContentLoaded', preloader.endLoading)
+    // Add timeout protection: force end after 7 seconds
+    setTimeout(preloader.endLoading, 7000)
+  }
+
+  if (false) {
+    btf.addGlobalFn('pjaxSend', preloader.initLoading, 'preloader_init')
+    btf.addGlobalFn('pjaxComplete', preloader.endLoading, 'preloader_end')
+  }
+})()</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">193</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">29</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">31</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/books/"><i class="fa-fw fas fa-book-open"></i><span> 书籍</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">股市操练笔记</span></a><a class="nav-page-title" href="/"><span class="site-name">教你炒股票54：一个具体走势的分析</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/books/"><i class="fa-fw fas fa-book-open"></i><span> 书籍</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">教你炒股票54：一个具体走势的分析</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-10-11T23:06:00.000Z" title="发表于 2026-10-12 07:06:00">2026-10-12</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-10-12T11:42:03.116Z" title="更新于 2026-10-12 19:42:03">2026-10-12</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%8E%9F%E6%96%87%E7%AF%87/">原文篇</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%8E%9F%E6%96%87%E7%AF%87/%E7%BC%A0%E8%AE%BA%C2%B7%E7%BA%BF%E6%AE%B5%E5%89%8D%E8%B5%B0%E5%8A%BF%E5%AE%9E%E4%BE%8B%E8%AE%B2%E8%A7%A3%E7%AF%87/">缠论·线段前走势实例讲解篇</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="container post-content" id="article-container"><div class="summary-card">
+<strong>本章导读</strong>：本课以航天机电一段复杂的1分钟走势为例，从g0点开始当下分析，逐步演示如何用结合律对走势进行多义性分解、如何由三个1分钟中枢重叠扩展出5分钟中枢，以及第三类买卖点如何判定。强调分解必须符合规范，并比较两种分解的优劣。
+</div>
+
+<blockquote>
+<p>原文首发：2007-05-24 01:37:31</p>
+</blockquote>
+<p><img src="/images/chan/chan-ch54/chan-ch54-01.png"></p>
+<p><em>图：上证指数2007-05-24日K线图（缠师原注）</em></p>
+<p>今天本不该说股票，连续两天都说股票也太浪费资源，不过回帖里有人提出这个问题很有代表性，所以有必要回答一下。今天等着看足球，十分无聊，上网419，还不如把这帖子给写了，先贴出来，让等看球的先消耗点无聊的时间。</p>
+<p>注意，看下面分析之前，不能太饿也不能太饱，不能太兴奋不能太不兴奋，否则一定晕。由于一般的图都没有这么复杂，所以看完之后千万别信心受到打击，而是应该信心百倍，知道只要精通本ID的理论，这么细微、古怪的图，都可以当下精确分析并指导操作，从而对本ID理论关于走势的绝对把握性有一个更清楚的认识。后面就是要多看图，多磨练的问题了。</p>
+<p>如果概念不清，看到这样的图，基本都要晕头转向。好了，大家开始深呼吸，放松脑筋，别抽筋了。</p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-02.png"></p>
+<p><em>图：航天机电（600151）1分钟走势分析总图（缠师原注）</em></p>
+<p>这图有个条件，就是d1&#x3D;g2，d2&#x3D;g4。其实这条件有还是没有，并不影响分析，但有这些条件，就会增加分析的难度。这里，就从18.59元（设为g0）开始分析。</p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-03.png"></p>
+<p><em>图：航天机电1分钟图，标出g0至g7各点（缠师原注）</em></p>
+<p>昨天刚好谈到，当你以某级别分析图形时，就先假设了次级别是线段。这图里，除了最后一个，其余每一个dngn、gndn+1都是1分钟以下级别的，所以都可以看成没有内部结构的线段。</p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-04.png"></p>
+<p><em>图：走势分解的红框示意图（缠师原注）</em></p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-05.png"></p>
+<p><em>图：航天机电1分钟图，标出关键中枢区间（缠师原注）</em></p>
+<p>我们就从g0开始，当下地进入图形中。显然，当下走到g1时，由于只有两段，所以不形成任何中枢，当然，如果你是一个分笔操作者，那么g1就构成一个第二类卖点了。</p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-06.png"></p>
+<p><em>图：航天机电1分钟图，g1构成第二类卖点（缠师原注）</em></p>
+<p>当走势发展到d2时，一个1分钟级别的中枢就形成，区间是[d1，g1]。后面出现的线段，就要以该区间来决定是中枢震荡还是第三类买卖点。</p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-07.png"></p>
+<p><em>图：航天机电1分钟图，中枢区间[d1，g1]（缠师原注）</em></p>
+<p>由于d1&#x3D;g2，那么d2g2这段就属于[d1，g1]中枢的震荡。</p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-08.png"></p>
+<p><em>图：航天机电1分钟图，d2g2属于中枢震荡（缠师原注）</em></p>
+<p>而到d3g3这段，显然已经不能触及[d1，g1]，所以g3就是第三类卖点。</p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-09.png"></p>
+<p><em>图：航天机电1分钟图，g3构成第三类卖点（缠师原注）</em></p>
+<p>当然，如果前面d1＞g2，那g2就是第三类卖点了。</p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-10.png"></p>
+<p><em>图：航天机电1分钟图，d1与g2位置关系（缠师原注）</em></p>
+<p>其实，由于d1&#x3D;g2，所以当行情发展到d3，就可以当下地用结合律对走势进行多样性分析。这时候，有如下等式：</p>
+<p>g0g3&#x3D;(g0d1+d1g1+g1d2)+d2g2+g2d3&#x3D;g0d1+(d1g1+g1d2+d2g2)+g2d3</p>
+<p>括弧里的是中枢。在后一式子看来，该中枢就是[d1，g2]，也就是一个价位，这时候，也并不影响前面关于g3就是第三类卖点的分析。而这种分解，比较符合一般的习惯，所以是可以采取的。</p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-11.png"></p>
+<p><em>图：航天机电1分钟图，结合律分解后中枢区间[d1，g2]（缠师原注）</em></p>
+<p>显然，以MACD辅助判断，力度上，g1d2＞g2d3＞g3d4，相对来说，后者都是前者的盘整背驰。当然，在1分钟图上，这种背驰都没有什么操作意义，但如果是日线、甚至年线图上，就有了。</p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-12.png"></p>
+<p><em>图：航天机电1分钟图，MACD辅助判断力度背驰（缠师原注）</em></p>
+<p>分解图形，有一个原则是必须知道的：两个同级别中枢之间必须有次级别的走势连接，例如，g0d4&#x3D;g0d1+（d1g1+g1d2+d2g2）+（g2d3，+d3g3+g3d4）这样的分解是不被允许的，因为括弧中的两个同级别中枢之间没有次级别的连接。（注意，这与下面三次级别构成中枢的情况不同，那种情况下，是允许三个括弧相加而之间没有次级别，因为那是扩展成高一级别中枢的情况，和这里两个同级别的情况不同。）</p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-13.png"></p>
+<p><em>图：航天机电1分钟图，两个同级别中枢间需次级别连接（缠师原注）</em></p>
+<p>当行情当下走到d4点时，根据上面的原则，无非有下面两种可能的分解：</p>
+<p>g0d4&#x3D;g0d1+（d1g1+g1d2+d2g2）+g2d3+d3g3+g3d4<br>&#x3D;g0d1+d1g1+g1d2+（d2g2+g2d3+d3g3）+g3d4</p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-14.png"></p>
+<p><em>图：航天机电1分钟图，d4点的两种可能分解（缠师原注）</em></p>
+<p>d4g4是盘整背驰后的正常反弹，针对上面第一种分解，这只是第三类卖点后向一个新的同级中枢移动或形成更高级别中枢的一个中间状态，g4d5这段也是；</p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-15.png"></p>
+<p><em>图：航天机电1分钟图，第一种分解下的中间状态（缠师原注）</em></p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-16.png"></p>
+<p><em>图：航天机电1分钟图，g4d5为中间状态（缠师原注）</em></p>
+<p>针对第二种分解，由于g4&#x3D;d2，所以d4g4是（d2g2+g2d3+d3g3）的中枢震荡，d5g5这段也是。</p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-17.png"></p>
+<p><em>图：航天机电1分钟图，第二种分解（缠师原注）</em></p>
+<p>有人可能要问，在这种情况下，采取哪种分解？其实，哪一种都可以，但第一种，由于在中间状态中，没有一个确定的标准，所以对短线操作指导不足，</p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-18.png"></p>
+<p><em>图：航天机电1分钟图，第二种分解（缠师原注）</em></p>
+<p>而第二种，由于是中枢震荡，操作起来就指导明确了，所以从方便操作的角度，就可以用第二种。这就是反复强调的分解多样性的好处，一般来说，对于具体操作，一定要选择当下有明确意义的分解，例如是中枢震荡的，或有第三类买卖点的，但一定要注意，所有的分解必须符合分解的原则，否则就乱套了。</p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-19.png"></p>
+<p><em>图：航天机电1分钟图，第一种分解（缠师原注）</em></p>
+<p>对于第二种分解，d5g5这段属于中枢震荡，但对于第一种分解，d5g5这段就有了一个重大的意义。因为那种第三类卖点出现后的中间状态，在d5g5这段出现后就彻底消除了，一个更大级别的中枢就给确定了。</p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-20.png"></p>
+<p><em>图：航天机电1分钟图，第二种分解（缠师原注）</em></p>
+<p>具体如下：</p>
+<p>g0g5&#x3D;g0d1+｛（d1g1+g1d2+d2g2）+（g2d3+d3g3+g3d4）+（d4g4+g4d5+d5g5）｝</p>
+<p>三个小括弧里的1分钟中枢重叠构成了大括弧里的5分钟高一级别中枢。中枢的区间是[d2，g5]，注意，这时候，就要把1分钟的走势当成线段，小括弧里的都是线段，高低点就是这线段的端点。</p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-21.png"></p>
+<p><em>图：航天机电1分钟图，第一种分解，扩展出5分钟中枢区间[d2，g5]（缠师原注）</em></p>
+<p>这样一来，后面的走势就十分简单了，例如，g7就是一个第三类卖点（d7g7，其中2、3根K线有一个较大的回试，然后有5、6两个小十字星停在该区域，由此就知道这肯定构成1分钟中枢了，也就是内部可以画出一个1分钟以下级别的三段来，当然，具体的如果有1分钟以下图看就可以把握，特别对于级别大的图，这些时候都可以看小级别的图去确认，如果经验多的，一般看到这种情况，不用看小级别的都知道这么回事情。）</p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-22.png"></p>
+<p><em>图：航天机电1分钟图，第一种分解框出5分钟中枢区间（缠师原注）</em></p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-23.png"></p>
+<p><em>图：航天机电1分钟图，g7第三类卖点处（缠师原注）</em></p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-24.png"></p>
+<p><em>图：航天机电1分钟图，g7构成1分钟中枢（缠师原注）</em></p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-25.png"></p>
+<p><em>图：航天机电1分钟图，g7处编号1-8的K线（缠师原注）</em></p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-26.png"></p>
+<p><em>图：航天机电1分钟图，编者注：d7-g7是一分钟走势类型（缠师原注）</em></p>
+<p>按照第二种分解，相应的5分钟中枢要到g6点才完成，这样</p>
+<p>g0g6&#x3D;g0d1+d1g1+g1d2+｛（d2g2+g2d3+d3g3）+（g3d4+d4g4+g4d5）+（d5g5+g5d6+d6g6）｝</p>
+<p>相应的5分钟中枢区间就是[d3，g5]，在这种情况下，d7g7也是一个中枢震荡，但不构成第三类卖点，因为不符合条件。（为什么？本ID写了这么多，这么简单的问题，就当成作业请各位回答。）</p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-27.png"></p>
+<p><em>图：航天机电1分钟图，第二种分解，中枢区间[d3，g5]（缠师原注）</em></p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-28.png"></p>
+<p><em>图：航天机电1分钟图，框出第二种分解的中枢区间（缠师原注）</em></p>
+<p>注意，并不是说一定要形成该级别第三类卖点后才能大幅度下跌，完全可以用该级别以下小级别的第三类卖点就突破中枢，但有一点是肯定的，就是只要足够长时间，该级别的这第三类卖点一定会出现的。</p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-29.png"></p>
+<p><em>图：航天机电1分钟图，框出中枢区间（缠师原注）</em></p>
+<p>当然，在最极端的情况下，这个卖点离中枢很远的位置了，但有一点是肯定的，就是该卖点后一定继续向下。而上涨的情况相反，第三买点后一定继续向上，一个最好的例子就是600477在20070409日这个小级别的第三类买点，这买点离2月分的中枢很远了，但依然有效，而且还是在这么大监管的条件下，本ID的理论继续发挥作用，为什么？因为那些监管并没有破坏本ID理论成立的两个最基本的前提。还有的可以看600837在20070206的例子。至于暴跌的例子，现在很难找到，老一点的投资者应该都记得庄股跳水后，第一次反抽后再继续更大幅度下跌的例子，那就是第三类卖点。</p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-30.png"></p>
+<p><em>图：a+A+b+B+c走势类型示意图（缠师原注）</em></p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-31.png"></p>
+<p><em>图：杭萧钢构（600477）日K线图，小级别第三类买点实例（缠师原注）</em></p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-32.png"></p>
+<p><em>图：杭萧钢构日K线图（缠师原注）</em></p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-33.png"></p>
+<p><em>图：杭萧钢构30分钟图（缠师原注）</em></p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-34.png"></p>
+<p><em>图：杭萧钢构5分钟图，涨停跳空（缠师原注）</em></p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-35.png"></p>
+<p><em>图：杭萧钢构30分钟图（缠师原注）</em></p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-36.png"></p>
+<p><em>图：杭萧钢构5分钟图（缠师原注）</em></p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-37.png"></p>
+<p><em>图：杭萧钢构5分钟图（缠师原注）</em></p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-38.png"></p>
+<p><em>图：杭萧钢构1分钟图（缠师原注）</em></p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-39.png"></p>
+<p><em>图：杭萧钢构1分钟图（缠师原注）</em></p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-40.png"></p>
+<p><em>图：杭萧钢构1分钟图（缠师原注）</em></p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-41.png"></p>
+<p><em>图：海通证券（600837）日K线图，第三类卖点实例（缠师原注）</em></p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-42.png"></p>
+<p><em>图：海通证券日K线图（缠师原注）</em></p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-43.png"></p>
+<p><em>图：海通证券30分钟图（缠师原注）</em></p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-44.png"></p>
+<p><em>图：海通证券5分钟图（缠师原注）</em></p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-45.png"></p>
+<p><em>图：海通证券60分钟图（缠师原注）</em></p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-46.png"></p>
+<p><em>图：海通证券30分钟图（缠师原注）</em></p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-47.png"></p>
+<p><em>图：海通证券5分钟图（缠师原注）</em></p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-48.png"></p>
+<p><em>图：ST春兰（600854）日K线图，庄股跳水后第三类卖点（缠师原注）</em></p>
+<p>必须注意，在这种大幅快速波动的情况下，一个小级别的第三类买卖点就足以值得介入。例如对一个周线中枢的突破，如果真要等周线级别的第三类买卖点，那就要一个日线级别的离开以及一个日线级别的反抽，这样要等到何年何月？因此，一个30分钟甚至5分钟的第三类买卖点都足以介入了。</p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-49.png"></p>
+<p><em>图：上证申贝（600843）日K线图（缠师原注）</em></p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-50.png"></p>
+<p><em>图：四川长虹（600839）周线图（缠师原注）</em></p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-51.png"></p>
+<p><em>图：同济科技（600646）周线图（缠师原注）</em></p>
+<p>但这里有一个基本的前提，这种小级别的大幅突破必须和一般的中枢波动分开，这种情况一般伴随最猛烈快速的走势，成交量以及力度等都要相应配合。这种操作，如果理论把握不好，有一定风险，就是和一般的中枢震荡搞混了，因此理论不熟练的，还是先按最简单的来，例如对周线中枢的突破，就老老实实等周线的第三类买点。注意，卖点的情况，即使理论不熟练的，宁愿按小的来，因为宁愿卖早，决不卖晚。不过，对于大级别中枢来说，如果还要等到第三类卖点才卖，那反应已经极端迟钝了，那第一、二卖点去哪了？市场里可不能随地睡觉。</p>
+<p>还有一种极端的例子，就是大幅度的中枢震荡，例如5分钟的中枢在10000元，最极端的，甚至可以次级别以下震荡到0.01元，又拉回来，即使连续跌停到0.01元，然后连续涨停到100000000元，再跌回来10000元，这也是5分钟的中枢震荡。当然，这么有病的例子也只能是理论中的，但由此可见本ID理论的涵盖面之广。所以中枢震荡的操作，一定是向上时力度盘整背驰抛，向下力度盘整背驰回补，而不是杀跌追涨，否则真出现这么有病的情况，那就真有病了。</p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-52.png"></p>
+<p><em>图：中枢震荡极端例示意图（100000000元&#x2F;10000元&#x2F;0.01元）（缠师原注）</em></p>
+<p>关于追涨杀跌，如果在中枢震荡中，一定死定。但如果是在第三类买卖点后，却不一定，因为中枢的移动，并不一定恰好就是你买卖的位置就结束了，就算是，后面也还有中枢震荡出现，因此，在这种情况下追涨杀跌，也有活的机会，但这都不是长远之计，为什么有好好的第三类买卖点不用，一定要追涨杀跌？就算是追涨杀跌，也可以利用小级别的买卖点进去，为什么一定要瞎蒙？</p>
+<p>回到上面的两种分解，其实这两种分解对于g7点来说，结论是一样的，而从MACD辅助看，这种两次拉回0轴都冲不上去的走势，而且第二次红柱子还面积小了，这种情况也预示者后面有麻烦。但多种分解，其实并不是什么麻烦事，反而是相互印证的好办法。不过一定要再次强调，分解必须符合规范，不能胡乱分解。</p>
+<p>按严格标准说，如果你能熟练地，无论任何图形，都能当下快速地按以上标准来分解并指导操作，那么对于本ID理论的学习，就大致可以小学毕业了。不过这样可能对信心不足或学习时分析能力比较一般的人打击过大，所以为了鼓励大家，本ID决定向教育部门学习学习，也来一个扩招，达到这种水平的，都统一发本科毕业证书，又鉴于最近北大已经堕落到连孔男人、李男人之流都可以教授教授了，所以决定毕业证书都统一成北大牌的，一律免费，这样大家应该可以放心学习了。</p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-53.png"></p>
+<p><em>图：航天机电1分钟图，MACD辅助判断（缠师原注）</em></p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-54.png"></p>
+<p><em>图：航天机电1分钟图，第一种分解方法（缠师原注）</em></p>
+<p><img src="/images/chan/chan-ch54/chan-ch54-55.png"></p>
+<p><em>图：航天机电1分钟图，第二种分解（缠师原注）</em></p>
+<hr>
+<div class="post-nav">
+[← 上一课](/2026/10/12/chan-ch53/)　|　[返回目录](/2026/10/12/chan-index/)　|　[下一课 →](/2026/10/12/chan-ch55/)
+</div>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%BC%A0%E4%B8%AD%E8%AF%B4%E7%A6%85/">缠中说禅</a><a class="post-meta__tags" href="/tags/%E7%BC%A0%E8%AE%BA/">缠论</a><a class="post-meta__tags" href="/tags/%E4%B8%AD%E6%9E%A2%E7%90%86%E8%AE%BA/">中枢理论</a><a class="post-meta__tags" href="/tags/%E5%8E%9F%E6%96%87%E7%89%88/">原文版</a></div><div class="post-share"><div class="social-share" data-image="/img/butterfly-icon.png" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/2026/10/12/chan-ch55/" title="教你炒股票55：买之前戏，卖之高潮"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">教你炒股票55：买之前戏，卖之高潮</div></div><div class="info-2"><div class="info-item-1"> 本章导读：本课以“前戏—高潮”比喻买卖。买是大级别底部区域反复建仓、降低成本、熟悉股性的前戏过程；卖是大级别高潮后继乏力、背驰时的退出。讲清算不对等、买中有卖的反复操作，以及散户与大资金在介入点上的区别。    原文首发：2007-05-28 08:12:41   图：上证指数2007-05-28日K线图（缠师原注） 人的行为同构性，把性研究清楚，人的行为也就略知一二了。股票买卖，不过是人的行为之一，当然也不例外。这里极为严肃地讨论这个问题。 首先，先给股票定性别，为什么本ID总爱说股票是面首，因为他确实是面首，他是他，而不是她，股票的性别是男的，所以难。难什么？难在高潮之不可持续，高潮之后必有不应。而投资者应该是什么性别，投资者应该是她而不是他，投资者的投资能力就应该如女性性能力般可持续，无不应。以女“性”可持续之洪大去折服男“性”不可持续之弱小，这就是投资之道。 投资的关键就是女性，就是可持续，这与股票本身的男性，不可持续构成了投资中最大的矛盾。投资之道，就是驾御面首之道，就是御男之术，就是采阳补阴之方。采阳，要讲究其火候，火候太嫩，采之难以成丹，太老，同样是废物，如果是阳...</div></div></div></a><a class="pagination-related" href="/2026/10/12/chan-ch53/" title="教你炒股票53：三类买卖点的再分辨"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">教你炒股票53：三类买卖点的再分辨</div></div><div class="info-2"><div class="info-item-1"> 本章导读：本课先用“显微镜”比喻讲清级别与中枢递归的关系，强调次级别在本级别观察中被视为线段；再辨析背驰与盘整背驰，最后落到三类买卖点——三者归根结底都可归到第一类买卖点，只是级别不同，并讲清第二类买卖点对“小转大”情况的补充意义。    原文首发：2007-05-23 08:47:18   图：上证指数2007-05-23日K线图（缠师原注） 由于新来的人越来越多，请都先把课程认识从头看一遍再讨论问题。另外，在分析一定要搞清楚中枢的递归定义，这是基础中的基础，连这都搞不清楚，没有彻底明白，那根本就不可能继续下去。 再者，关于级别的问题，如果想不明白，可以当成用不同倍数的显微镜去看一滴水，由此当然会看出不同的精细度，级别之与走势也一样。一个最简单的例子，三个5分钟级别的走势重叠构成一个30分钟中枢，站在30分钟级别的角度，5分钟的走势都可以看成就是一个线段，没有内部结构的，这线段的高低点就是对应5分钟走势的高低点；而站在5分钟的次级别1分钟上看，每段5分钟的高低点都不绝对是在5分钟走势的结束或开始位置，当然，按1分钟的级别重新用结合律重新组合，总能让高低点分别在开始或结束的位置...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/2026/10/12/chan-ch36/" title="教你炒股票36：走势类型连接结合性的简单运用"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-10-12</div><div class="info-item-2">教你炒股票36：走势类型连接结合性的简单运用</div></div><div class="info-2"><div class="info-item-1"> 本章导读：本课把上一课的结合律落到运用上。同一段走势按1、5、30分钟、日等不同级别分解，就是不同释义；利用结合律可把混级别走势重新组合成标准同级别走势，并以大盘实例示范如何组合出最有利于操作、最能揭示买卖点的分解。    原文首发：2007-03-13 09:00:49   图：上证指数2007-02-01当日K线图（缠师原注） 上堂课提到走势类型连接运算的结合性，也就是走势类型的连接符合结合律，即A+B+C&#x3D;（A+B）+C&#x3D;A+（B+C），A、B、C的走势类型级别可以不同。因此，站在多义性的角度，根据该结合律，就不难知道，任何一段走势，都可以有很多不同的释义。必须注意，多义性不是含糊性，一个含糊的理论，其分类、概念等呈现的含糊性，只是证明该理论基础的含糊。而多义性，是站在一个严格、精确的理论基础上，用同一理论的不同视角对同一现象进行分析。 一个最简单的释义角度，就是级别，任何一段走势，都可以根据不同的级别进行分解，不妨用An-m的形式表示根据n级别对A段进行分解的第m段，就有： A&#x3D;A1-1+A1-2+A1-3+…+A1-m1&#x3D;A5-...</div></div></div></a><a class="pagination-related" href="/2026/10/12/chan-ch60/" title="教你炒股票60：图解分析示范五"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-10-12</div><div class="info-item-2">教你炒股票60：图解分析示范五</div></div><div class="info-2"><div class="info-item-1"> 本章导读：本课从图形背后的心理学意义切入，指出走势本质上是市场各种心理预期的合力当下留下的痕迹。以B0下跌、A1反弹、再跌破至A2后反弹B2的简单模型，区分B2是否高于A1两种情况的本质差别，并说明本ID理论“不预测、只跟随”的方法论根据。    原文首发：2007-06-19 08:04:06   图：上证指数2007-06-19当日K线图（缠师原注） 其实，枯燥的图形，里面包含着很深的心理学意义。走势，本质上是预期的合力。而预期，本质上是心理层面的。只不过对于市场来说，可以被当成分力去形成市场合力的预期，都是被外化为市场买卖行为的。你的恐惧，如果光是在那里恐惧而没有实际的行动，那并不构成市场的交易行为。因此，所有市场行为，其实已经被如此的心理模式给过滤一遍了。 举一个简单的例子，同级别走势从B0下跌到A1反弹到B1，再跌破下跌到A2，再反弹到B2，这可以分为两类：一、B2低于A1，二、B2不低于A1。  图：B0-A1-B1-A2-B2两情况走势结构示意图（缠师原注） 显然，第二种情况，会构成某更大级别的中枢，而第一种情况没有，因此这两种情况是有着本质区别的。在心理层面上，...</div></div></div></a><a class="pagination-related" href="/2026/10/12/chan-ch45/" title="教你炒股票45：持股与持币，两种最基本的操作"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-10-12</div><div class="info-item-2">教你炒股票45：持股与持币，两种最基本的操作</div></div><div class="info-2"><div class="info-item-1"> 本章导读：本课指出，买入卖出只是瞬间动作，填充其间的持股与持币才是更重要的操作，二者归根结底都是“等待”。买卖点是生长出来的、不可预测，但走势类型的结构与类型可分类，操作者只需观察当下、让市场选择并随之选择。    原文首发：2007-04-12 15:39:04   图：上证指数2007-04-12日K线图（缠师原注） 发现很多人都有这样的糊涂概念，以为买入卖出才是股票的操作，是股票操作的所有了。其实，对于每一笔交易来说，买入卖出，1秒都不用就完成了，更多、更长时间的，填充在买入与卖出之间两种最基本的操作：持股与持币，才是更重要的操作。 假设你是按30分钟级别操作的，那么，在一个30分钟的买点买入后，就进入一个持股的操作中，根据本ID的理论，你很明确地知道，一个30分钟的卖点必然在前面等着，这卖点宣告从那30分钟买点开始的走势类型的结束。在这个卖点到来之前，你就只在持股这唯一的操作里。当这个30分钟的卖点出现时，卖出，然后就进入持币的操作里，直到一个30分钟的买点出现。持股与持币，归根结底就是一种等待，等待那个被理论绝对保证的买卖点。所有股票的操作，归根结底，只有两个字：等待...</div></div></div></a><a class="pagination-related" href="/2026/10/12/chan-ch21/" title="教你炒股票21：缠中说禅买卖点分析的完备性"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-10-12</div><div class="info-item-2">教你炒股票21：缠中说禅买卖点分析的完备性</div></div><div class="info-2"><div class="info-item-1"> 本章导读：本课论证三类买卖点的完备性——除了第一、二、三类买卖点之外，再无其他类型的买卖点，并证明缠中说禅买卖点完备性定理与升跌完备性定理：市场走势完全由这三类买卖点为端点的线段构成。    原文首发：2007-01-09 15:03:58   图：上证指数2007-08-02当日K线图（缠师原注） 前面已经说过三类的买卖点，一个很现实的问题，就是除了这三类买卖点之外，还有什么其他类型的买卖点？答案是否定的。这里必须强调的是，这三类买卖点，都是被理论所保证的，100%安全的买卖点，如果对这三类买卖点的绝对安全性没有充分的理解，就绝对不可能也绝对没有对缠中说禅技术分析理论有一个充分的理解。市场交易，归根结底就是买卖点的把握，买卖点的完备性就是理论的完备性，因此，对这个问题必须进行一个概括性的论述。 所谓100%安全的买卖点，就是这点之后，市场必然发生转折，没有任何模糊或需要分辨的情况需要选择。市场交易，不能完全建筑在或然上，这市场的绝对必然性，是交易中唯一值得信赖的港湾。有人可能要反驳说，世界上没有绝对的东西。那么，世界上没有绝对的绝对性又是哪个上帝所保证的？任何的绝对性，都是建...</div></div></div></a><a class="pagination-related" href="/2026/10/12/chan-ch28/" title="教你炒股票28：下一目标：摧毁基金"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-10-12</div><div class="info-item-2">教你炒股票28：下一目标：摧毁基金</div></div><div class="info-2"><div class="info-item-1"> 本章导读：本课直言基金无论公募私募都是合法传销，股票归根结底是废纸；基金的命门是钱不是自己的、随时面临赎回潮与净值考核，在大级别调整中必然成为被攻击的对象。    原文首发：2007-02-06 15:04:50   图：上证指数日线K线图，含成交量VOL与MACD（缠师原注） 基金，无论公募还是私募，说白了就是合法传销，本ID从来看不起任何基金，无论公募还是私募。理论上，只要这个合法传销无限延伸下去，那最开始的人肯定要多牛有多牛了。很多人爱用巴菲特说事，所谓价值投资，其实不过是一种传销手段而已。股票，归根结底就是废纸一张，而其传销本性决定了，股票的所谓价值可以是这样一个完美的圈套，就是在股票所代表的公司上有1元的利润，在股票上就可以产生至少10元的增殖，这，无非就是资产虚拟化中的放大功能。因此，任何一个空壳公司，理论上，只要能合法地发行基金，然后用这传销得到的钱部分地投在该空壳公司的资产上，就可以在股票上赚取10倍以上的增殖。只要有钱，什么优质资产不可以买入注入？只要有钱，什么优质资产不被优先选购？然后，投资这股票的基金就挣钱了，然后新一轮的传销又开始了，如此而已。 任何不承...</div></div></div></a><a class="pagination-related" href="/2026/10/12/chan-houji/" title="后记"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-10-12</div><div class="info-item-2">后记</div></div><div class="info-2"><div class="info-item-1"> 本章导读：后记简述本套资料从2013年第一版到2015年第二版的成书过程，并附本书配套视频、淘宝网店、书友QQ群与作者博客等交流方式。   后记感谢大家几年来对《市场哲学的数学原理完全配图手册》的关注和支持： 本套资料第一版于2013年年初成稿，竖排版一共777页（横排版为2000页），分为上、中、下三册装订。在第一版成形后的近两年的时间，多位缠友阅读后给出了非常高的评价，奉为学缠之屠龙宝刀。与此同时，他们也提出了非常中肯的宝贵的意见，在此感谢大家。 目前您看到的是本套资料的第二版，于2015年年底定稿。竖排版一共707页，分为上、下两册装订。这个版本听取了多位缠友的宝贵经验，对部分图形做了修订，排版做了优化，因而页面有所减少。总体而言《市场哲学的数学原理完全配图手册》第二版可以说是博采众长、集体创作的近乎完美的版本。 您可以进入如下网址，找到本书和配套视频：https://chanlun.taobao.com [此处为淘宝网店二维码，扫码可进入网店] 您可以用淘宝手机版扫描此二维码进入淘宝网店 本套资料仅供内部交流讨论，私人定制价格为1998元人民币。 如上所述，本书的制作过...</div></div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">操练笔记</div><div class="author-info-description">股票技术分析学习笔记</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">193</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">29</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">31</div></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">本博客为个人学习笔记，仅供学习参考，不构成投资建议。</div></div><div class="card-widget card-contact" id="card-contact"><div class="item-headline"><i class="fas fa-users"></i><span>联系方式 · 加入交流</span></div><div class="item-content"><div class="contact-list">
+  <div class="contact-item">
+    <div class="contact-label"><i class="fab fa-weixin"></i> 我的微信</div>
+    <a class="contact-qr-wrap" href="/images/contact/wechat.png" target="_blank" rel="noopener">
+      <img class="contact-qr" src="/images/contact/wechat.png" alt="我的微信二维码" loading="lazy">
+    </a>
+    <div class="contact-tip">扫码加我微信，备注「操练」</div>
+  </div>
+
+  <div class="contact-item">
+    <div class="contact-label"><i class="fas fa-coins"></i> 打赏支持</div>
+    <a class="contact-qr-wrap" href="/images/contact/reward.jpg" target="_blank" rel="noopener">
+      <img class="contact-qr" src="/images/contact/reward.jpg" alt="打赏收款码" loading="lazy">
+    </a>
+    <div class="contact-tip">若笔记对你有帮助，欢迎打赏支持</div>
+  </div>
+
+  <div class="contact-item">
+    <div class="contact-label"><i class="fab fa-weixin"></i> 微信群 · 晨风量化交流群</div>
+    <a class="contact-qr-wrap" href="/images/contact/wechat-group.png" target="_blank" rel="noopener">
+      <img class="contact-qr" src="/images/contact/wechat-group.png" alt="微信群二维码" loading="lazy">
+    </a>
+    <div class="contact-tip">群二维码 7 天内有效，过期后请在文章留言获取最新</div>
+  </div>
+
+  <div class="contact-item">
+    <div class="contact-label"><i class="fas fa-bolt"></i> 飞书群 · 晨风量化</div>
+    <a class="contact-qr-wrap" href="/images/contact/feishu.png" target="_blank" rel="noopener">
+      <img class="contact-qr" src="/images/contact/feishu.png" alt="飞书群二维码" loading="lazy">
+    </a>
+    <div class="contact-tip">飞书群二维码永久有效，扫码即刻加入</div>
+  </div>
+</div>
+</div></div><div class="sticky_layout"><div class="card-widget card-post-series"><div class="item-headline"><i class="fa-solid fa-layer-group"></i><span>系列文章</span></div><div class="aside-list"><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-index/" title="市场哲学的数学原理：阅读路线与目录">市场哲学的数学原理：阅读路线与目录</a><time datetime="2026-10-12T06:00:00.000Z" title="发表于 2026-10-12 14:00:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-houji/" title="后记">后记</a><time datetime="2026-10-12T05:10:00.000Z" title="发表于 2026-10-12 13:10:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-appendix2/" title="附录二：缠论经典">附录二：缠论经典</a><time datetime="2026-10-12T05:05:00.000Z" title="发表于 2026-10-12 13:05:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-appendix1/" title="附录一：缠师心法荟萃">附录一：缠师心法荟萃</a><time datetime="2026-10-12T05:00:00.000Z" title="发表于 2026-10-12 13:00:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch108/" title="教你炒股票108：何谓底部？从月线看中期走势演化">教你炒股票108：何谓底部？从月线看中期走势演化</a><time datetime="2026-10-12T04:39:00.000Z" title="发表于 2026-10-12 12:39:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch107/" title="教你炒股票107：如何操作短线反弹">教你炒股票107：如何操作短线反弹</a><time datetime="2026-10-12T04:36:00.000Z" title="发表于 2026-10-12 12:36:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch106/" title="教你炒股票106：均线、轮动与缠中说禅板块强弱指标">教你炒股票106：均线、轮动与缠中说禅板块强弱指标</a><time datetime="2026-10-12T04:33:00.000Z" title="发表于 2026-10-12 12:33:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch105/" title="教你炒股票105：远离聪明、机械操作">教你炒股票105：远离聪明、机械操作</a><time datetime="2026-10-12T04:30:00.000Z" title="发表于 2026-10-12 12:30:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch104/" title="教你炒股票104：几何结构与能量动力结构1">教你炒股票104：几何结构与能量动力结构1</a><time datetime="2026-10-12T04:27:00.000Z" title="发表于 2026-10-12 12:27:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch103/" title="教你炒股票103：学屠龙术前先学好防狼术">教你炒股票103：学屠龙术前先学好防狼术</a><time datetime="2026-10-12T04:24:00.000Z" title="发表于 2026-10-12 12:24:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch102/" title="教你炒股票102：再说走势必完美">教你炒股票102：再说走势必完美</a><time datetime="2026-10-12T04:21:00.000Z" title="发表于 2026-10-12 12:21:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch101/" title="教你炒股票101：答疑1">教你炒股票101：答疑1</a><time datetime="2026-10-12T04:18:00.000Z" title="发表于 2026-10-12 12:18:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch100/" title="教你炒股票100：中医、兵法、诗歌、操作3">教你炒股票100：中医、兵法、诗歌、操作3</a><time datetime="2026-10-12T04:15:00.000Z" title="发表于 2026-10-12 12:15:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch99/" title="教你炒股票99：走势结构的两重表里关系3">教你炒股票99：走势结构的两重表里关系3</a><time datetime="2026-10-12T04:12:00.000Z" title="发表于 2026-10-12 12:12:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch98/" title="教你炒股票98：中医、兵法、诗歌、操作2">教你炒股票98：中医、兵法、诗歌、操作2</a><time datetime="2026-10-12T04:09:00.000Z" title="发表于 2026-10-12 12:09:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch97/" title="教你炒股票97：中医、兵法、诗歌、操作1">教你炒股票97：中医、兵法、诗歌、操作1</a><time datetime="2026-10-12T04:06:00.000Z" title="发表于 2026-10-12 12:06:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch96/" title="教你炒股票96：无处不在的赌徒心理">教你炒股票96：无处不在的赌徒心理</a><time datetime="2026-10-12T04:03:00.000Z" title="发表于 2026-10-12 12:03:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch95/" title="教你炒股票95：修炼自己">教你炒股票95：修炼自己</a><time datetime="2026-10-12T04:00:00.000Z" title="发表于 2026-10-12 12:00:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch94/" title="教你炒股票94：当机立断">教你炒股票94：当机立断</a><time datetime="2026-10-12T03:39:00.000Z" title="发表于 2026-10-12 11:39:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch93/" title="教你炒股票93：走势结构的两重表里关系2">教你炒股票93：走势结构的两重表里关系2</a><time datetime="2026-10-12T03:36:00.000Z" title="发表于 2026-10-12 11:36:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch92/" title="教你炒股票92：中枢震荡的监视器">教你炒股票92：中枢震荡的监视器</a><time datetime="2026-10-12T03:33:00.000Z" title="发表于 2026-10-12 11:33:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch91/" title="教你炒股票91：走势结构的两重表里关系1">教你炒股票91：走势结构的两重表里关系1</a><time datetime="2026-10-12T03:30:00.000Z" title="发表于 2026-10-12 11:30:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch90/" title="教你炒股票90：中阴阶段结束时间的辅助判断">教你炒股票90：中阴阶段结束时间的辅助判断</a><time datetime="2026-10-12T03:27:00.000Z" title="发表于 2026-10-12 11:27:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch89/" title="教你炒股票89：中阴阶段的具体分析">教你炒股票89：中阴阶段的具体分析</a><time datetime="2026-10-12T03:24:00.000Z" title="发表于 2026-10-12 11:24:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch88/" title="教你炒股票88：图形生长的一个具体案例">教你炒股票88：图形生长的一个具体案例</a><time datetime="2026-10-12T03:21:00.000Z" title="发表于 2026-10-12 11:21:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch87/" title="教你炒股票87：逗庄家玩的一些杂史4">教你炒股票87：逗庄家玩的一些杂史4</a><time datetime="2026-10-12T03:18:00.000Z" title="发表于 2026-10-12 11:18:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch86/" title="教你炒股票86：走势分析中必须杜绝一根筋思维">教你炒股票86：走势分析中必须杜绝一根筋思维</a><time datetime="2026-10-12T03:15:00.000Z" title="发表于 2026-10-12 11:15:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch85/" title="教你炒股票85：逗庄家玩的一些杂史3">教你炒股票85：逗庄家玩的一些杂史3</a><time datetime="2026-10-12T03:12:00.000Z" title="发表于 2026-10-12 11:12:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch84/" title="教你炒股票84：本ID理论一些必须注意的问题">教你炒股票84：本ID理论一些必须注意的问题</a><time datetime="2026-10-12T03:09:00.000Z" title="发表于 2026-10-12 11:09:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch83/" title="教你炒股票83：笔-线段与线段-最小中枢结构的不同心理意义1">教你炒股票83：笔-线段与线段-最小中枢结构的不同心理意义1</a><time datetime="2026-10-12T03:06:00.000Z" title="发表于 2026-10-12 11:06:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch82/" title="教你炒股票82：分型结构的心理因素">教你炒股票82：分型结构的心理因素</a><time datetime="2026-10-12T03:03:00.000Z" title="发表于 2026-10-12 11:03:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch81/" title="教你炒股票81：图例、更正及分型、走势类型的哲学本质">教你炒股票81：图例、更正及分型、走势类型的哲学本质</a><time datetime="2026-10-12T03:00:00.000Z" title="发表于 2026-10-12 11:00:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch80/" title="教你炒股票80：市场没有同情、不信眼泪">教你炒股票80：市场没有同情、不信眼泪</a><time datetime="2026-10-12T02:18:00.000Z" title="发表于 2026-10-12 10:18:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch79/" title="教你炒股票79：分型的辅助操作与一些问题的再解答">教你炒股票79：分型的辅助操作与一些问题的再解答</a><time datetime="2026-10-12T02:15:00.000Z" title="发表于 2026-10-12 10:15:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch78/" title="教你炒股票78：继续说线段的划分">教你炒股票78：继续说线段的划分</a><time datetime="2026-10-12T02:12:00.000Z" title="发表于 2026-10-12 10:12:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch77/" title="教你炒股票77：一些概念的再分辨">教你炒股票77：一些概念的再分辨</a><time datetime="2026-10-12T02:09:00.000Z" title="发表于 2026-10-12 10:09:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch76/" title="教你炒股票76：逗庄家玩的一些杂史2">教你炒股票76：逗庄家玩的一些杂史2</a><time datetime="2026-10-12T02:06:00.000Z" title="发表于 2026-10-12 10:06:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch75/" title="教你炒股票75：逗庄家玩的一些杂史1">教你炒股票75：逗庄家玩的一些杂史1</a><time datetime="2026-10-12T02:03:00.000Z" title="发表于 2026-10-12 10:03:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch74/" title="教你炒股票74：如何躲避政策性风险">教你炒股票74：如何躲避政策性风险</a><time datetime="2026-10-12T02:00:00.000Z" title="发表于 2026-10-12 10:00:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch73/" title="教你炒股票73：市场获利机会的绝对分类">教你炒股票73：市场获利机会的绝对分类</a><time datetime="2026-10-12T01:18:00.000Z" title="发表于 2026-10-12 09:18:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch72/" title="教你炒股票72：本ID已有课程的再梳理">教你炒股票72：本ID已有课程的再梳理</a><time datetime="2026-10-12T01:15:00.000Z" title="发表于 2026-10-12 09:15:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch71/" title="教你炒股票71：线段划分标准的再分辨">教你炒股票71：线段划分标准的再分辨</a><time datetime="2026-10-12T01:12:00.000Z" title="发表于 2026-10-12 09:12:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch70/" title="教你炒股票70：一个教科书式走势的示范分析">教你炒股票70：一个教科书式走势的示范分析</a><time datetime="2026-10-12T01:09:00.000Z" title="发表于 2026-10-12 09:09:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch69/" title="教你炒股票69：月线分段与上海大走势分析、预判">教你炒股票69：月线分段与上海大走势分析、预判</a><time datetime="2026-10-12T01:06:00.000Z" title="发表于 2026-10-12 09:06:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch68/" title="教你炒股票68：走势预测的精确意义">教你炒股票68：走势预测的精确意义</a><time datetime="2026-10-12T01:03:00.000Z" title="发表于 2026-10-12 09:03:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch67/" title="教你炒股票67：线段的划分标准">教你炒股票67：线段的划分标准</a><time datetime="2026-10-12T01:00:00.000Z" title="发表于 2026-10-12 09:00:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch66/" title="教你炒股票66：主力资金的食物链">教你炒股票66：主力资金的食物链</a><time datetime="2026-10-12T00:18:00.000Z" title="发表于 2026-10-12 08:18:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch65/" title="教你炒股票65：再说说分型、笔、线段">教你炒股票65：再说说分型、笔、线段</a><time datetime="2026-10-12T00:15:00.000Z" title="发表于 2026-10-12 08:15:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch64/" title="教你炒股票64：去机场路上给各位补课">教你炒股票64：去机场路上给各位补课</a><time datetime="2026-10-12T00:12:00.000Z" title="发表于 2026-10-12 08:12:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch63/" title="教你炒股票63：替各位理理基本概念">教你炒股票63：替各位理理基本概念</a><time datetime="2026-10-12T00:09:00.000Z" title="发表于 2026-10-12 08:09:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch62/" title="教你炒股票62：分型、笔与线段">教你炒股票62：分型、笔与线段</a><time datetime="2026-10-12T00:06:00.000Z" title="发表于 2026-10-12 08:06:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch61/" title="教你炒股票61：区间套定位标准图解（分析示范六）">教你炒股票61：区间套定位标准图解（分析示范六）</a><time datetime="2026-10-12T00:03:00.000Z" title="发表于 2026-10-12 08:03:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch60/" title="教你炒股票60：图解分析示范五">教你炒股票60：图解分析示范五</a><time datetime="2026-10-12T00:00:00.000Z" title="发表于 2026-10-12 08:00:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch59/" title="教你炒股票59：图解分析示范四">教你炒股票59：图解分析示范四</a><time datetime="2026-10-11T23:21:00.000Z" title="发表于 2026-10-12 07:21:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch58/" title="教你炒股票58：图解分析示范三">教你炒股票58：图解分析示范三</a><time datetime="2026-10-11T23:18:00.000Z" title="发表于 2026-10-12 07:18:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch57/" title="教你炒股票57：当下图解分析再示范">教你炒股票57：当下图解分析再示范</a><time datetime="2026-10-11T23:15:00.000Z" title="发表于 2026-10-12 07:15:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch56/" title="教你炒股票56：530印花税当日行情图解">教你炒股票56：530印花税当日行情图解</a><time datetime="2026-10-11T23:12:00.000Z" title="发表于 2026-10-12 07:12:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch55/" title="教你炒股票55：买之前戏，卖之高潮">教你炒股票55：买之前戏，卖之高潮</a><time datetime="2026-10-11T23:09:00.000Z" title="发表于 2026-10-12 07:09:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch54/" title="教你炒股票54：一个具体走势的分析">教你炒股票54：一个具体走势的分析</a><time datetime="2026-10-11T23:06:00.000Z" title="发表于 2026-10-12 07:06:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch53/" title="教你炒股票53：三类买卖点的再分辨">教你炒股票53：三类买卖点的再分辨</a><time datetime="2026-10-11T23:03:00.000Z" title="发表于 2026-10-12 07:03:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch52/" title="教你炒股票52：炒股票就是真正的学佛">教你炒股票52：炒股票就是真正的学佛</a><time datetime="2026-10-11T23:00:00.000Z" title="发表于 2026-10-12 07:00:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch51/" title="教你炒股票51：短线股评荐股者的传销把戏">教你炒股票51：短线股评荐股者的传销把戏</a><time datetime="2026-10-11T22:18:00.000Z" title="发表于 2026-10-12 06:18:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch50/" title="教你炒股票50：操作中的一些细节问题">教你炒股票50：操作中的一些细节问题</a><time datetime="2026-10-11T22:15:00.000Z" title="发表于 2026-10-12 06:15:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch49/" title="教你炒股票49：利润率最大的操作模式">教你炒股票49：利润率最大的操作模式</a><time datetime="2026-10-11T22:12:00.000Z" title="发表于 2026-10-12 06:12:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch48/" title="教你炒股票48：暴跌，牛市行情的一夜情">教你炒股票48：暴跌，牛市行情的一夜情</a><time datetime="2026-10-11T22:09:00.000Z" title="发表于 2026-10-12 06:09:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch47/" title="教你炒股票47：一夜情行情分析">教你炒股票47：一夜情行情分析</a><time datetime="2026-10-11T22:06:00.000Z" title="发表于 2026-10-12 06:06:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch46/" title="教你炒股票46：每日走势的分类">教你炒股票46：每日走势的分类</a><time datetime="2026-10-11T22:03:00.000Z" title="发表于 2026-10-12 06:03:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch45/" title="教你炒股票45：持股与持币，两种最基本的操作">教你炒股票45：持股与持币，两种最基本的操作</a><time datetime="2026-10-11T22:00:00.000Z" title="发表于 2026-10-12 06:00:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch44/" title="教你炒股票44：小级别背驰引发大级别转折">教你炒股票44：小级别背驰引发大级别转折</a><time datetime="2026-10-11T21:21:00.000Z" title="发表于 2026-10-12 05:21:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch43/" title="教你炒股票43：有关背驰的补习课">教你炒股票43：有关背驰的补习课</a><time datetime="2026-10-11T21:18:00.000Z" title="发表于 2026-10-12 05:18:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch42/" title="教你炒股票42：有些人是不适合参与市场的">教你炒股票42：有些人是不适合参与市场的</a><time datetime="2026-10-11T21:15:00.000Z" title="发表于 2026-10-12 05:15:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch41/" title="教你炒股票41：没有节奏，只有死">教你炒股票41：没有节奏，只有死</a><time datetime="2026-10-11T21:12:00.000Z" title="发表于 2026-10-12 05:12:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch40/" title="教你炒股票40：同级别分解的多重赋格">教你炒股票40：同级别分解的多重赋格</a><time datetime="2026-10-11T21:09:00.000Z" title="发表于 2026-10-12 05:09:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch39/" title="教你炒股票39：同级别分解再研究">教你炒股票39：同级别分解再研究</a><time datetime="2026-10-11T21:06:00.000Z" title="发表于 2026-10-12 05:06:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch38/" title="教你炒股票38：走势类型连接的同级别分解">教你炒股票38：走势类型连接的同级别分解</a><time datetime="2026-10-11T21:03:00.000Z" title="发表于 2026-10-12 05:03:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch37/" title="教你炒股票37：背驰的再分辨">教你炒股票37：背驰的再分辨</a><time datetime="2026-10-11T21:00:00.000Z" title="发表于 2026-10-12 05:00:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch36/" title="教你炒股票36：走势类型连接结合性的简单运用">教你炒股票36：走势类型连接结合性的简单运用</a><time datetime="2026-10-11T20:18:00.000Z" title="发表于 2026-10-12 04:18:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch35/" title="教你炒股票35：给基础差的同学补补课">教你炒股票35：给基础差的同学补补课</a><time datetime="2026-10-11T20:15:00.000Z" title="发表于 2026-10-12 04:15:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch34/" title="教你炒股票34：宁当面首，莫成怨男">教你炒股票34：宁当面首，莫成怨男</a><time datetime="2026-10-11T20:12:00.000Z" title="发表于 2026-10-12 04:12:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch33/" title="教你炒股票33：走势的多义性">教你炒股票33：走势的多义性</a><time datetime="2026-10-11T20:09:00.000Z" title="发表于 2026-10-12 04:09:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch32/" title="教你炒股票32：走势的当下与投资者的思维方式">教你炒股票32：走势的当下与投资者的思维方式</a><time datetime="2026-10-11T20:06:00.000Z" title="发表于 2026-10-12 04:06:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch31/" title="教你炒股票31：资金管理的最稳固基础">教你炒股票31：资金管理的最稳固基础</a><time datetime="2026-10-11T20:03:00.000Z" title="发表于 2026-10-12 04:03:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch30/" title="教你炒股票30：缠中说禅理论的绝对性">教你炒股票30：缠中说禅理论的绝对性</a><time datetime="2026-10-11T20:00:00.000Z" title="发表于 2026-10-12 04:00:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch29/" title="教你炒股票29：转折的力度与级别">教你炒股票29：转折的力度与级别</a><time datetime="2026-10-11T19:18:00.000Z" title="发表于 2026-10-12 03:18:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch28/" title="教你炒股票28：下一目标：摧毁基金">教你炒股票28：下一目标：摧毁基金</a><time datetime="2026-10-11T19:15:00.000Z" title="发表于 2026-10-12 03:15:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch27/" title="教你炒股票27：盘整背驰与历史性底部">教你炒股票27：盘整背驰与历史性底部</a><time datetime="2026-10-11T19:12:00.000Z" title="发表于 2026-10-12 03:12:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch26/" title="教你炒股票26：市场风险如何回避">教你炒股票26：市场风险如何回避</a><time datetime="2026-10-11T19:09:00.000Z" title="发表于 2026-10-12 03:09:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch25/" title="教你炒股票25：吻，MACD、背弛、中枢">教你炒股票25：吻，MACD、背弛、中枢</a><time datetime="2026-10-11T19:06:00.000Z" title="发表于 2026-10-12 03:06:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch24/" title="教你炒股票24：MACD对背弛的辅助判断">教你炒股票24：MACD对背弛的辅助判断</a><time datetime="2026-10-11T19:03:00.000Z" title="发表于 2026-10-12 03:03:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch23/" title="教你炒股票23：市场与人生">教你炒股票23：市场与人生</a><time datetime="2026-10-11T19:00:00.000Z" title="发表于 2026-10-12 03:00:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch22/" title="教你炒股票22：将8亿的大米装到5个庄家的肚里">教你炒股票22：将8亿的大米装到5个庄家的肚里</a><time datetime="2026-10-11T18:15:00.000Z" title="发表于 2026-10-12 02:15:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch21/" title="教你炒股票21：缠中说禅买卖点分析的完备性">教你炒股票21：缠中说禅买卖点分析的完备性</a><time datetime="2026-10-11T18:12:00.000Z" title="发表于 2026-10-12 02:12:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch20/" title="教你炒股票20：缠中说禅走势中枢级别扩张及第三类买卖点">教你炒股票20：缠中说禅走势中枢级别扩张及第三类买卖点</a><time datetime="2026-10-11T18:09:00.000Z" title="发表于 2026-10-12 02:09:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch19/" title="教你炒股票19：学习缠中说禅技术分析理论的关键">教你炒股票19：学习缠中说禅技术分析理论的关键</a><time datetime="2026-10-11T18:06:00.000Z" title="发表于 2026-10-12 02:06:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch18/" title="教你炒股票18：不被面首的雏男是不完美的">教你炒股票18：不被面首的雏男是不完美的</a><time datetime="2026-10-11T18:03:00.000Z" title="发表于 2026-10-12 02:03:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch17/" title="教你炒股票17：走势终完美">教你炒股票17：走势终完美</a><time datetime="2026-10-11T18:00:00.000Z" title="发表于 2026-10-12 02:00:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch16/" title="教你炒股票16：中小资金的高效买卖法">教你炒股票16：中小资金的高效买卖法</a><time datetime="2026-10-11T17:45:00.000Z" title="发表于 2026-10-12 01:45:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch15/" title="教你炒股票15：没有趋势，没有背驰">教你炒股票15：没有趋势，没有背驰</a><time datetime="2026-10-11T17:42:00.000Z" title="发表于 2026-10-12 01:42:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch14/" title="教你炒股票14：喝茅台的高潮程序！">教你炒股票14：喝茅台的高潮程序！</a><time datetime="2026-10-11T17:39:00.000Z" title="发表于 2026-10-12 01:39:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch13/" title="教你炒股票13：不带套的操作不是好操作！">教你炒股票13：不带套的操作不是好操作！</a><time datetime="2026-10-11T17:36:00.000Z" title="发表于 2026-10-12 01:36:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch12/" title="教你炒股票12：一吻何能消魂？">教你炒股票12：一吻何能消魂？</a><time datetime="2026-10-11T17:33:00.000Z" title="发表于 2026-10-12 01:33:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch11/" title="教你炒股票11：不会吻，无以高潮！">教你炒股票11：不会吻，无以高潮！</a><time datetime="2026-10-11T17:30:00.000Z" title="发表于 2026-10-12 01:30:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch10/" title="教你炒股票10：2005年6月，本ID为何时隔四年后重看股票">教你炒股票10：2005年6月，本ID为何时隔四年后重看股票</a><time datetime="2026-10-11T17:27:00.000Z" title="发表于 2026-10-12 01:27:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch09/" title="教你炒股票9：甄别“早泄”男的数学原则！">教你炒股票9：甄别“早泄”男的数学原则！</a><time datetime="2026-10-11T17:24:00.000Z" title="发表于 2026-10-12 01:24:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch08/" title="教你炒股票8：投资如选面首，G点为中心，拒绝ED男！">教你炒股票8：投资如选面首，G点为中心，拒绝ED男！</a><time datetime="2026-10-11T17:21:00.000Z" title="发表于 2026-10-12 01:21:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch07/" title="教你炒股票7：给赚了指数亏了钱的一些忠告">教你炒股票7：给赚了指数亏了钱的一些忠告</a><time datetime="2026-10-11T17:18:00.000Z" title="发表于 2026-10-12 01:18:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch06/" title="教你炒股票6：本ID如何在五粮液、包钢权证上提款的！">教你炒股票6：本ID如何在五粮液、包钢权证上提款的！</a><time datetime="2026-10-11T17:15:00.000Z" title="发表于 2026-10-12 01:15:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch05/" title="教你炒股票5：市场无须分析，只要看和干！">教你炒股票5：市场无须分析，只要看和干！</a><time datetime="2026-10-11T17:12:00.000Z" title="发表于 2026-10-12 01:12:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch04/" title="教你炒股票4：什么是理性？今早买N中工就是理性！">教你炒股票4：什么是理性？今早买N中工就是理性！</a><time datetime="2026-10-11T17:09:00.000Z" title="发表于 2026-10-12 01:09:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch03/" title="教你炒股票3：你的喜好，你的死亡陷阱！">教你炒股票3：你的喜好，你的死亡陷阱！</a><time datetime="2026-10-11T17:06:00.000Z" title="发表于 2026-10-12 01:06:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch02/" title="教你炒股票2：没有庄家，有的只是赢家和输家！">教你炒股票2：没有庄家，有的只是赢家和输家！</a><time datetime="2026-10-11T17:03:00.000Z" title="发表于 2026-10-12 01:03:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-ch01/" title="教你炒股票1：不会赢钱的经济人，只是废人">教你炒股票1：不会赢钱的经济人，只是废人</a><time datetime="2026-10-11T17:00:00.000Z" title="发表于 2026-10-12 01:00:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-notice/" title="告全国散户、大股东、庄家、基金及管理层书">告全国散户、大股东、庄家、基金及管理层书</a><time datetime="2026-10-11T16:15:00.000Z" title="发表于 2026-10-12 00:15:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-outline/" title="教你炒股票108课学习大纲">教你炒股票108课学习大纲</a><time datetime="2026-10-11T16:10:00.000Z" title="发表于 2026-10-12 00:10:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-preface/" title="前言">前言</a><time datetime="2026-10-11T16:05:00.000Z" title="发表于 2026-10-12 00:05:00">2026-10-12</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2026/10/12/chan-author/" title="作者简介">作者简介</a><time datetime="2026-10-11T16:00:00.000Z" title="发表于 2026-10-12 00:00:00">2026-10-12</time></div></div></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/10/12/chan-index/" title="市场哲学的数学原理：阅读路线与目录">市场哲学的数学原理：阅读路线与目录</a><time datetime="2026-10-12T06:00:00.000Z" title="发表于 2026-10-12 14:00:00">2026-10-12</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/10/12/chan-houji/" title="后记">后记</a><time datetime="2026-10-12T05:10:00.000Z" title="发表于 2026-10-12 13:10:00">2026-10-12</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/10/12/chan-appendix2/" title="附录二：缠论经典">附录二：缠论经典</a><time datetime="2026-10-12T05:05:00.000Z" title="发表于 2026-10-12 13:05:00">2026-10-12</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/10/12/chan-appendix1/" title="附录一：缠师心法荟萃">附录一：缠师心法荟萃</a><time datetime="2026-10-12T05:00:00.000Z" title="发表于 2026-10-12 13:00:00">2026-10-12</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/10/12/chan-ch108/" title="教你炒股票108：何谓底部？从月线看中期走势演化">教你炒股票108：何谓底部？从月线看中期走势演化</a><time datetime="2026-10-12T04:39:00.000Z" title="发表于 2026-10-12 12:39:00">2026-10-12</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2026 By 操练笔记</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.2</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.7.1.260810</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.7.1.260810"></script><script src="/js/main.js?v=5.7.1.260810"></script><div class="js-pjax"></div><script src="/js/reader.js"></script><script src="/js/sw-register.js" defer></script><script id="canvas_nest" defer="defer" color="0, 188, 212" opacity="0.35" zIndex="-1" count="60" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="搜索文章" type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=5.7.1.260810"></script></div></div></body></html>

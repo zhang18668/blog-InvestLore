@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>科普视频设计蓝图 · 第1集《操盘纪律2分钟》</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Microsoft YaHei", "PingFang SC", sans-serif; background: #0f1420; color: #e8ecf4; padding: 24px; }
+  .wrap { max-width: 1020px; margin: 0 auto; }
+  .head { background: linear-gradient(135deg,#171f33,#1c2740); border: 1px solid #2b3a5e; border-radius: 14px; padding: 24px 28px; margin-bottom: 18px; }
+  .head h1 { font-size: 22px; margin-bottom: 8px; color: #fff; }
+  .head p { font-size: 14px; color: #9fb0d0; line-height: 1.7; }
+  .tag { display: inline-block; background: rgba(244,63,94,.15); color: #fb7185; border: 1px solid rgba(244,63,94,.4); border-radius: 999px; padding: 2px 10px; font-size: 12px; margin-right: 6px; }
+  .tag.g { background: rgba(16,185,129,.12); color: #34d399; border-color: rgba(16,185,129,.35); }
+  .params { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+  .param { background: #1c2740; border: 1px solid #2b3a5e; border-radius: 8px; padding: 8px 14px; font-size: 13px; color: #c7d2f0; }
+  .param b { color: #fb7185; }
+  .flow { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-top: 14px; }
+  .flow .node { background: #131b2e; border: 1px solid #31456f; border-radius: 8px; padding: 5px 10px; font-size: 12px; color: #a5b6d8; }
+  .flow .arrow { color: #fb7185; font-size: 14px; }
+  .shots { display: flex; flex-direction: column; gap: 14px; }
+  .shot { background: #171f33; border: 1px solid #2b3a5e; border-radius: 14px; padding: 16px 18px; display: flex; gap: 16px; align-items: flex-start; flex-wrap: wrap; }
+  .shot img { width: 250px; max-width: 100%; border: 1px solid #2b3a5e; border-radius: 8px; background:#fff; }
+  .shot-info { flex: 1; min-width: 300px; }
+  .shot-title { font-size: 15px; font-weight: 600; color: #fff; margin-bottom: 6px; }
+  .shot-title .no { display: inline-block; background: #fb7185; color: #141a28; border-radius: 6px; padding: 1px 8px; font-size: 12px; font-weight: 700; margin-right: 8px; vertical-align: 2px; }
+  .meta { font-size: 12.5px; color: #7d8db1; margin-bottom: 6px; }
+  .meta span { margin-right: 12px; }
+  .narr { background: rgba(16,185,129,.08); border-left: 3px solid #34d399; border-radius: 0 8px 8px 0; padding: 8px 12px; font-size: 13px; color: #9fe8c5; line-height: 1.6; }
+  .narr b { color: #34d399; }
+  .foot { margin-top: 18px; background: #171f33; border: 1px solid #2b3a5e; border-radius: 14px; padding: 16px 20px; font-size: 13px; color: #9fb0d0; line-height: 1.9; }
+  .foot b { color: #e8ecf4; }
+  .pipe { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+  .pipe .step { background: #131b2e; border: 1px solid #31456f; border-radius: 8px; padding: 6px 12px; font-size: 12.5px; color: #a5b6d8; }
+  .pipe .sep { color: #fb7185; align-self: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="head">
+    <h1>科普视频设计蓝图 · 第1集《操盘纪律 · 2分钟完整版》</h1>
+    <p>素材：博客《操作特别提醒大全：识底抄底、识顶逃顶与铁律纪律》。<b>成片 = 8 段 × 15 秒拼接 + 全程解说配音</b>，覆盖"理念 → 抄底 → 逃顶 → 仓位 → 止损 → 风控 → 误区"完整脉络。</p>
+    <div style="margin-top:10px;">
+      <span class="tag">时长 2 分钟</span>
+      <span class="tag g">8 段拼接</span>
+      <span class="tag g">全程解说配音</span>
+      <span class="tag">横屏 16:9</span>
+      <span class="tag">差异化镜头运动</span>
+    </div>
+    <div class="params">
+      <div class="param">模型 <b>seedance_2.0_fast</b></div>
+      <div class="param">单段时长 <b>15 秒</b></div>
+      <div class="param">总时长 <b>120 秒</b></div>
+      <div class="param">画面 <b>片头卡×1 + 博客原图×7</b></div>
+      <div class="param">配音 <b>8 段旁白</b></div>
+    </div>
+    <div class="flow">
+      <span class="node">片头理念</span><span class="arrow">→</span>
+      <span class="node">抄底信号</span><span class="arrow">→</span>
+      <span class="node">分批建仓</span><span class="arrow">→</span>
+      <span class="node">逃顶卖点</span><span class="arrow">→</span>
+      <span class="node">金字塔仓位</span><span class="arrow">→</span>
+      <span class="node">颈线止损</span><span class="arrow">→</span>
+      <span class="node">危险信号</span><span class="arrow">→</span>
+      <span class="node">误区收尾</span>
+    </div>
+  </div>
+
+  <div class="shots">
+
+    <div class="shot">
+      <img src="https://aka.doubaocdn.com/s/DaRgUKu0xD" alt="赢家与散户">
+      <div class="shot-info">
+        <div class="shot-title"><span class="no">01</span>片头 · 理念定调（0–15s）</div>
+        <div class="meta"><span>画面：AI 生成深色金融科技风片头卡（预览图为理念参考）</span><span>运动：推入 + 红光扫过</span></div>
+        <div class="meta">深蓝黑背景、红绿 K 线剪影、大标题「操盘纪律」，营造专业感，与后面白底图表形成明暗反差，解决单调问题。</div>
+        <div class="narr"><b>旁白：</b>“会买的是徒弟，会卖的是师傅，会空仓的是祖师爷。操作到最后，拼的不是技术，而是理念与执行。”</div>
+      </div>
+    </div>
+
+    <div class="shot">
+      <img src="https://aka.doubaocdn.com/s/8nXgNt6Jgd" alt="底部信号组合">
+      <div class="shot-info">
+        <div class="shot-title"><span class="no">02</span>抄底 · 信号组合（15–30s）</div>
+        <div class="meta"><span>素材：vol4-01 底部信号组合</span><span>运动：缓推近景</span></div>
+        <div class="meta">低位长下影、历史低位放量、首次新低后止跌回升三个信号逐步呈现。</div>
+        <div class="narr"><b>旁白：</b>“抄底最大的敌人，是过早。底部要靠信号组合来确认——低位长下影、历史低位放量、首次新低后止跌回升，单一信号，只能参考。”</div>
+      </div>
+    </div>
+
+    <div class="shot">
+      <img src="https://aka.doubaocdn.com/s/FYzqftVoOn" alt="抄底四步走">
+      <div class="shot-info">
+        <div class="shot-title"><span class="no">03</span>抄底 · 分批建仓（30–45s）</div>
+        <div class="meta"><span>素材：vol4-04 抄底四步走</span><span>运动：从左到右横移</span></div>
+        <div class="meta">四步流程：等信号 → 轻仓试探 → 确认加仓 → 留机动，横向节奏推进。</div>
+        <div class="narr"><b>旁白：</b>“抄底别一把梭。等信号、轻仓试探、确认反转再加仓、留一份机动。四步走，不急于一时。”</div>
+      </div>
+    </div>
+
+    <div class="shot">
+      <img src="https://aka.doubaocdn.com/s/TKukFv3Q0E" alt="逃顶时机三个卖点">
+      <div class="shot-info">
+        <div class="shot-title"><span class="no">04</span>逃顶 · 三个卖点（45–60s）</div>
+        <div class="meta"><span>素材：vol4-07 逃顶时机</span><span>运动：节奏性推进</span></div>
+        <div class="meta">三个卖点依次点亮：涨高放大量 → 反弹无力 → 破位下行，紧迫感递增。</div>
+        <div class="narr"><b>旁白：</b>“顶部操作，宁可错卖，不可深套。涨高放大量，先减半；反弹无力，再减；跌破关键支撑，清仓离场。”</div>
+      </div>
+    </div>
+
+    <div class="shot">
+      <img src="https://aka.doubaocdn.com/s/XUH0XPVlJE" alt="金字塔建仓">
+      <div class="shot-info">
+        <div class="shot-title"><span class="no">05</span>仓位 · 金字塔（60–75s）</div>
+        <div class="meta"><span>素材：vol4-08 金字塔建仓</span><span>运动：拉远再推近</span></div>
+        <div class="meta">先展示整体下跌结构，再推近三批建仓点位，突出"越跌越买、越买越少"。</div>
+        <div class="narr"><b>旁白：</b>“金字塔建仓，越跌越买，但越买越少，底仓最重。仓位跟着趋势走，趋势越强，仓位越重。”</div>
+      </div>
+    </div>
+
+    <div class="shot">
+      <img src="https://aka.doubaocdn.com/s/EUBdP2gdrb" alt="颈线生命线">
+      <div class="shot-info">
+        <div class="shot-title"><span class="no">06</span>止损 · 颈线生命线（75–90s）</div>
+        <div class="meta"><span>素材：vol4-11 止损纪律</span><span>运动：推近特写</span></div>
+        <div class="meta">聚焦颈线位置，强调"有效跌破"判定，最后定格"绝不摊平补仓"。</div>
+        <div class="narr"><b>旁白：</b>“颈线就是生命线。收盘有效跌破颈线，无条件离场；绝不摊平补仓，止损是保命，不是认输。”</div>
+      </div>
+    </div>
+
+    <div class="shot">
+      <img src="https://aka.doubaocdn.com/s/ybvbjg9Owb" alt="三大危险信号">
+      <div class="shot-info">
+        <div class="shot-title"><span class="no">07</span>风控 · 危险信号（90–105s）</div>
+        <div class="meta"><span>素材：vol4-13 三大危险出逃信号</span><span>运动：横向三连扫过</span></div>
+        <div class="meta">断头铡刀 → 向下跳空 → 死亡谷三图依次扫过，警示感强。</div>
+        <div class="narr"><b>旁白：</b>“断头铡刀、向下跳空、死亡谷，三大危险信号，出现一个先减半，出现两个清仓走人，先跑再说。”</div>
+      </div>
+    </div>
+
+    <div class="shot">
+      <img src="https://aka.doubaocdn.com/s/W6erTEAzi7" alt="常见八大误区">
+      <div class="shot-info">
+        <div class="shot-title"><span class="no">08</span>误区 · 收尾（105–120s）</div>
+        <div class="meta"><span>素材：vol4-15 常见八大误区</span><span>运动：缓推定格</span></div>
+        <div class="meta">八大误区清单呈现，收尾压字"股市有风险，入市需谨慎"。</div>
+        <div class="narr"><b>旁白：</b>“追涨杀跌、死扛不止损、满仓梭哈……八大误区，对照自查，有则改之。股市有风险，入市需谨慎。”</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="foot">
+    <b>制作流程：</b>
+    <div class="pipe">
+      <span class="step">① 生成片头标题卡（AI 出图）</span><span class="sep">→</span>
+      <span class="step">② 8 段图生视频（每段 15 秒）</span><span class="sep">→</span>
+      <span class="step">③ 8 段解说配音</span><span class="sep">→</span>
+      <span class="step">④ 拼接合轨输出 2 分钟成片</span>
+    </div>
+    <br>
+    <b>解决单调的手段：</b>① AI 深色片头卡与白底图表形成明暗反差；② 每段镜头运动不同（推、移、拉、扫、特写）；③ 每段配专属解说与节奏感。
+    <br>
+    <b>风险提示：</b>内容源自个人学习笔记，仅供学习参考，不构成投资建议。
+  </div>
+
+</div>
+</body>
+</html>

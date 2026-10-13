@@ -1,0 +1,35 @@
+# ---------- 系统 / 编辑器 ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+
+# ---------- 依赖与构建产物 ----------
+node_modules/
+public/
+dist/
+.deploy*/
+db.json
+_multiconfig.yml
+scratch/
+
+# ---------- 大体积二进制资料（原书 PDF、压缩包、可执行程序）----------
+*.pdf
+*.zip
+*.7z
+*.rar
+*.exe
+
+# ---------- 临时 / 预览 ----------
+.preview/
+
+# ---------- 缠论构建中间产物（生成图 / 备份 / 探测目录）----------
+chan-build/work-*/
+chan-build/backup-*/
+chan-build/test-*/
+chan-build/verify-*/
+chan-build/*-probe*/
+
+# ---------- 博客生成的大图资产（K 线 / 缠论 / 量价图，超出 GitHub 限制）----------
+stock-blog/source/images/
+stock-blog/favicon_preview.png

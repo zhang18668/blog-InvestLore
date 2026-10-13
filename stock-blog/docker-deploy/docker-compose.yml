@@ -1,0 +1,15 @@
+# 股市操练笔记 · Docker Compose
+# 用法：在本目录执行  docker compose up -d --build
+services:
+  blog:
+    build: .
+    image: stock-blog:latest
+    container_name: stock-blog
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      # HTTPS：获得证书后放开下行，并启用 nginx.conf 中的 443 server 块
+      # - "443:443"
+    # HTTPS 证书挂载（宿主机用 certbot 生成后启用）
+    # volumes:
+    #   - /etc/letsencrypt:/etc/letsencrypt:ro

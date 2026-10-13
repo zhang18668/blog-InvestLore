@@ -1,0 +1,41 @@
+# 自定义侧边栏组件（Butterfly 主题 card_top_self 机制）
+# 渲染位置：首页/文章等所有页面的侧边栏顶部
+top:
+  - class_name: card-contact
+    id_name: card-contact
+    name: 联系方式 · 加入交流
+    icon: fas fa-users
+    html: |
+      <div class="contact-list">
+        <div class="contact-item">
+          <div class="contact-label"><i class="fab fa-weixin"></i> 我的微信</div>
+          <a class="contact-qr-wrap" href="/images/contact/wechat.png" target="_blank" rel="noopener">
+            <img class="contact-qr" src="/images/contact/wechat.png" alt="我的微信二维码" loading="lazy">
+          </a>
+          <div class="contact-tip">扫码加我微信，备注「操练」</div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-label"><i class="fas fa-coins"></i> 打赏支持</div>
+          <a class="contact-qr-wrap" href="/images/contact/reward.jpg" target="_blank" rel="noopener">
+            <img class="contact-qr" src="/images/contact/reward.jpg" alt="打赏收款码" loading="lazy">
+          </a>
+          <div class="contact-tip">若笔记对你有帮助，欢迎打赏支持</div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-label"><i class="fab fa-weixin"></i> 微信群 · 晨风量化交流群</div>
+          <a class="contact-qr-wrap" href="/images/contact/wechat-group.png" target="_blank" rel="noopener">
+            <img class="contact-qr" src="/images/contact/wechat-group.png" alt="微信群二维码" loading="lazy">
+          </a>
+          <div class="contact-tip">群二维码 7 天内有效，过期后请在文章留言获取最新</div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-label"><i class="fas fa-bolt"></i> 飞书群 · 晨风量化</div>
+          <a class="contact-qr-wrap" href="/images/contact/feishu.png" target="_blank" rel="noopener">
+            <img class="contact-qr" src="/images/contact/feishu.png" alt="飞书群二维码" loading="lazy">
+          </a>
+          <div class="contact-tip">飞书群二维码永久有效，扫码即刻加入</div>
+        </div>
+      </div>
